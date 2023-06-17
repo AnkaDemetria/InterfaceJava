@@ -19,6 +19,27 @@ il faut implémenter la manière dont ces méthodes vont etre utilisées
 
 ![interface java](interface.png)
 
+Implémentation: elle peut être multiple contrairement aux classes qui ne peuvent avoir d'héritage multiple (implémentation multiple d'interface)
+
+Syntaxe: 
+une interface peut étendre une autre interface: extends (comme pour les classes)
+et quand une interface utilise une autre interface: implements, 
+On met les extensions en premier et apres les implémentations dc on met toujours les extends avant les implements
+
+On implemente les méthodes abstraites de l'interface dans le fichier qui va utiliser l'interface et seulement là, sans modifier le code de l'interface
+il faut utiliser toutes les méthodes qu'il y a dans l'interface donc si le code de l'interface utilise 10méthodes, il faut implémenter les 10méthodes de l'interface dans le fichier de la classe qui utilise l'interface (ou les classes).
+
+Il n'y a pas d'instance d 'interface comme dans les classes abstraites donc on n'a pas de constructeur dans une interface.
+
+On peut utiliser les méthodes static  et  final (c'est une constante avec final) dans une interface.
+Exception: avec les méthodes par défauts qui permettent d'implémenter dans une interface: default public void name()
+
+classes abstraites ont des éléments communs, et sont proches
+Interface: classes qui n'ont pas forcément de lien entre elles mais qui vont factoriser un certain nombre de fonctionnalités (attributs et méthodes)
+![exemple tuto interface](exinterface.PNG)
+
+
+
 ##LES CLASSES ABSTRAITES
 
 L'intérêt principal de définir une classe comme abstraite va être justement de fournir un cadre plus strict lorsqu'ils vont utiliser notre code en les forçant à définir certaines méthodes et etc. 
